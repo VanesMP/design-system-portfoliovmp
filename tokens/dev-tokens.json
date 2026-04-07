@@ -1,0 +1,58 @@
+{
+  "global": {
+    "font-heading": {
+      "$type": "fontFamilies",
+      "$value": "Sora",
+      "$description": "use it only for heading"
+    },
+    "border-radius--sm": {
+      "$type": "borderRadius",
+      "$value": "8px"
+    },
+    "font-text": {
+      "$type": "fontFamilies",
+      "$value": "DM_Sans",
+      "$description": "use for all content except heading"
+    },
+    "border-radius--md": {
+      "$type": "borderRadius",
+      "$value": "16px"
+    },
+    "border-radius--lg": {
+      "$type": "borderRadius",
+      "$value": "24px"
+    },
+    "border-radius--xs": {
+      "$type": "borderRadius",
+      "$value": "4px"
+    }
+  },
+  "dev": {
+    "color-background--dark": {
+      "$type": "color",
+      "$value": "#00241D"
+    },
+    "color-background--light": {
+      "$type": "color",
+      "$value": "#F6F8F2"
+    }
+  },
+  "art": {
+    "color-background--dark": {
+      "$type": "color",
+      "$value": "#140000"
+    },
+    "color-background--light": {
+      "$type": "color",
+      "$value": "#F9F1EC"
+    }
+  },
+  "$themes": [],
+  "$metadata": {
+    "tokenSetOrder": [
+      "global",
+      "dev",
+      "art"
+    ]
+  }
+}
