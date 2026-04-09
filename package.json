@@ -11,7 +11,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:tokens": "npx style-dictionary build --config ./style-dictionary.config.js",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "build": "npm run build:tokens && npm run build-storybook"
   },
   "repository": {
     "type": "git",
