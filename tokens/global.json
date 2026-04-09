@@ -1,64 +1,12 @@
 {
-  "global": {
-    "font-heading": {
-      "$type": "fontFamilies",
-      "$value": "Sora",
-      "$description": "use it only for heading"
-    },
-    "border-radius--sm": {
-      "$type": "borderRadius",
-      "$value": "8px"
-    },
-    "font-text": {
-      "$type": "fontFamilies",
-      "$value": "DM_Sans",
-      "$description": "use for all content except heading"
-    },
-    "border-radius--md": {
-      "$type": "borderRadius",
-      "$value": "16px"
-    },
-    "border-radius--lg": {
-      "$type": "borderRadius",
-      "$value": "24px"
-    },
-    "border-radius--xs": {
-      "$type": "borderRadius",
-      "$value": "4px"
-    }
+  "font": {
+    "heading": { "value": "Sora", "type": "font" },
+    "text": { "value": "DM_Sans", "type": "font" }
   },
-  "dev-dark": {
-    "color-background--dark": {
-      "$type": "color",
-      "$value": "#00241D"
-    }
-  },
-  "dev-light": {
-    "color-background--light": {
-      "$type": "color",
-      "$value": "#F6F8F2"
-    }
-  },
-  "art-dark": {
-    "color-background--dark": {
-      "$type": "color",
-      "$value": "#140000"
-    }
-  },
-  "art-light": {
-    "color-background--light": {
-      "$type": "color",
-      "$value": "#F9F1EC"
-    }
-  },
-  "$themes": [],
-  "$metadata": {
-    "tokenSetOrder": [
-      "global",
-      "dev-dark",
-      "dev-light",
-      "art-dark",
-      "art-light"
-    ]
+  "borderRadius": {
+    "xs": { "value": "4px", "type": "borderRadius" },
+    "sm": { "value": "8px", "type": "borderRadius" },
+    "md": { "value": "16px", "type": "borderRadius" },
+    "lg": { "value": "24px", "type": "borderRadius" }
   }
 }
