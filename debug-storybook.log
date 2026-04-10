@@ -1,42 +1,34 @@
-[15:47:42.314] [INFO] storybook v10.3.4
-[15:47:42.393] [ERROR] [38;2;241;97;97mSB_CORE-SERVER_0007 (MainFileEvaluationError): Storybook couldn't evaluate your [33m.storybook/main.js[39m file.
-
-Original error:
-[37m/.storybook/main.js:11
-export default config;
-^^^^^^
-
-SyntaxError: Unexpected token 'export'
-    at wrapSafe (node:internal/modules/cjs/loader:1762:18)
-    at Module._compile (node:internal/modules/cjs/loader:1803:20)
-    at Module._extensions..js (node:internal/modules/cjs/loader:1969:10)
-    at Module.load (node:internal/modules/cjs/loader:1552:32)
-    at Module._load (node:internal/modules/cjs/loader:1354:12)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
-    at loadCJSModuleWithModuleLoad (node:internal/modules/esm/translators:325:3)
-    at ModuleWrap.<anonymous> (node:internal/modules/esm/translators:230:7)
-    at ModuleJob.run (node:internal/modules/esm/module_job:430:25)
-    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:639:26)[39m[39m
-    at loadMainConfig (file://./node_modules/storybook/dist/_node-chunks/chunk-3LP2BDDH.js:11712:11)
-    at async buildDevStandalone (file://./node_modules/storybook/dist/core-server/index.js:7953:16)
-    at async withTelemetry (file://./node_modules/storybook/dist/_node-chunks/chunk-HUYNFPPD.js:225:12)
-    at async dev (file://./node_modules/storybook/dist/bin/core.js:2736:3)
-    at async _Command.<anonymous> (file://./node_modules/storybook/dist/bin/core.js:2806:92)
-[15:47:42.395] [WARN] Broken build, fix the error above.
+[15:33:22.658] [INFO] storybook v10.3.5
+[15:33:22.881] [DEBUG] Getting package.json info for /Users/vanessa/Desktop/Repo/design-system-portfoliovmp/package.json...
+[15:33:23.485] [INFO] Starting...
+[15:33:23.646] [DEBUG] Starting preview..
+[15:33:23.690] [WARN] 🚨 Unable to index ./src/components/Themes/Themes.stories.jsx:
+  TypeError: Duplicate declaration "Themes"
+  5 | };
+  6 |
+> 7 | export const Themes = () => <Themes portfolio="dev" />;
+    |              ^^^^^^
+    at File2.buildCodeFrameError (file:///Users/vanessa/Desktop/Repo/design-system-portfoliovmp/node_modules/storybook/dist/_node-chunks/chunk-JXXWBFBF.js:33320:16)
+    at _Scope.checkBlockScopedCollisions (file:///Users/vanessa/Desktop/Repo/design-system-portfoliovmp/node_modules/storybook/dist/_node-chunks/chunk-JXXWBFBF.js:24202:31)
+    at _Scope.registerBinding (file:///Users/vanessa/Desktop/Repo/design-system-portfoliovmp/node_modules/storybook/dist/_node-chunks/chunk-JXXWBFBF.js:24286:20)
+    at _Scope.registerDeclaration (file:///Users/vanessa/Desktop/Repo/design-system-portfoliovmp/node_modules/storybook/dist/_node-chunks/chunk-JXXWBFBF.js:24245:18)
+    at Object.BlockScoped (file:///Users/vanessa/Desktop/Repo/design-system-portfoliovmp/node_modules/storybook/dist/_node-chunks/chunk-JXXWBFBF.js:24094:83)
+    at Object.newFn (file:///Users/vanessa/Desktop/Repo/design-system-portfoliovmp/node_modules/storybook/dist/_node-chunks/chunk-JXXWBFBF.js:23521:21)
+    at NodePath._call (file:///Users/vanessa/Desktop/Repo/design-system-portfoliovmp/node_modules/storybook/dist/_node-chunks/chunk-JXXWBFBF.js:31696:22)
+    at NodePath.call (file:///Users/vanessa/Desktop/Repo/design-system-portfoliovmp/node_modules/storybook/dist/_node-chunks/chunk-JXXWBFBF.js:31686:22)
+    at NodePath.visit (file:///Users/vanessa/Desktop/Repo/design-system-portfoliovmp/node_modules/storybook/dist/_node-chunks/chunk-JXXWBFBF.js:31719:38)
+    at TraversalContext.visitQueue (file:///Users/vanessa/Desktop/Repo/design-system-portfoliovmp/node_modules/storybook/dist/_node-chunks/chunk-JXXWBFBF.js:31605:49)
+[15:33:23.694] [ERROR] Failed to build the preview
+[15:33:23.697] [ERROR] Error: Unable to index ./src/components/Themes/Themes.stories.jsx
+    at _StoryIndexGenerator.getIndexAndStats (file://./node_modules/storybook/dist/core-server/index.js:6282:15)
+    at async _StoryIndexGenerator.getIndex (file://./node_modules/storybook/dist/core-server/index.js:6271:13)
+    at async BasicMinimalPluginContext.config (file://./node_modules/@storybook/builder-vite/dist/_node-chunks/chunk-2UAJDYWO.js:184:19)
+    at async runConfigHook (file://./node_modules/vite/dist/node/chunks/node.js:34709:15)
+    at async resolveConfig (file://./node_modules/vite/dist/node/chunks/node.js:34159:11)
+    at async _createServer (file://./node_modules/vite/dist/node/chunks/node.js:26002:65)
+    at async Module.start (file://./node_modules/@storybook/builder-vite/dist/index.js:1557:17)
+    at async storybookDevServer (file://./node_modules/storybook/dist/core-server/index.js:7503:83)
+    at async buildOrThrow (file://./node_modules/storybook/dist/core-server/index.js:4508:12)
+    at async buildDevStandalone (file://./node_modules/storybook/dist/core-server/index.js:8033:41)
+[15:33:23.698] [WARN] Broken build, fix the error above.
 You may need to refresh the browser.
-[15:47:42.397] [WARN]   Failed to load preset: "/Users/vanessa/Desktop/Repo/design-system-portfoliovmp/.storybook/main.js"
-[15:47:42.397] [ERROR] ./.storybook/main.js:11
-export default config;
-^^^^^^
-
-[38;2;241;97;97mSyntaxError: Unexpected token 'export'[39m
-    at wrapSafe (node:internal/modules/cjs/loader:1762:18)
-    at Module._compile (node:internal/modules/cjs/loader:1803:20)
-    at Module._extensions..js (node:internal/modules/cjs/loader:1969:10)
-    at Module.load (node:internal/modules/cjs/loader:1552:32)
-    at Module._load (node:internal/modules/cjs/loader:1354:12)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
-    at loadCJSModuleWithModuleLoad (node:internal/modules/esm/translators:325:3)
-    at ModuleWrap.<anonymous> (node:internal/modules/esm/translators:230:7)
-    at ModuleJob.run (node:internal/modules/esm/module_job:430:25)
-    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:639:26)

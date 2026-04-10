@@ -1,5 +1,7 @@
 {
-  "color": {
-    "background": { "$value": "#F6F8F2", "$type": "color" }
-  }
+    "color": 
+    {
+        "background": { "value": "#F6F8F2", "type": "color" },
+        "text": { "value": "#080808", "type": "color" }
+    }
 }

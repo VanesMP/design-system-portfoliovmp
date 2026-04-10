@@ -1,0 +1,29 @@
+.themeContainer {
+  width: auto;
+  height: 100vh;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+.themeTitle {
+  margin-bottom: 0px;
+}
+
+.themeButton {
+  width: fit-content;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+.themeText{
+  margin: 16px 0px;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+}
