@@ -21,18 +21,21 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/VanesMP/design-system-portfoliovmp/issues"
   },
   "homepage": "https://github.com/VanesMP/design-system-portfoliovmp#readme",
   "dependencies": {
+    "clsx": "^2.1.1",
     "react": "^19.2.4",
     "react-dom": "^19.2.4"
   },
   "devDependencies": {
+    "@storybook/addon-docs": "^10.3.5",
     "@storybook/react-vite": "^10.3.4",
     "prop-types": "^15.8.1",
+    "sass": "^1.99.0",
     "storybook": "^10.3.4",
     "style-dictionary": "^5.4.0"
   }

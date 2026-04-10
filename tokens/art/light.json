@@ -1,5 +1,5 @@
 {
-  "color": {
-    "background": { "value": "#F9F1EC", "type": "color" }
-  }
+    "color": {
+      "background": { "value": "#F9F1EC", "type": "color" },
+      "text": { "value": "#080808", "type": "color"}}
 }
