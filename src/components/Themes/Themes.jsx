@@ -28,17 +28,18 @@ export const Themes = ({ portfolio }) => {
   const content = portfolioContent[portfolio];
 
   return (
-    <div
-      className={Styles.themeContainer}
-    >
+    <div className={Styles.themeContainer}>
       <h1 className={Styles.themeTitle}>
         Theme system for {portfolio} portfolio
       </h1>
-        <span className={Styles.themeText}>
-         Two visual directions are available:
-          <span><strong>{content.title}:</strong> {content.description}</span>
-          Each portfolio adapts the same design tokens to create a distinct atmosphere.
+      <span className={Styles.themeText}>
+        Two visual directions are available:
+        <span>
+          <strong>{content.title}:</strong> {content.description}
         </span>
+        Each portfolio adapts the same design tokens to create a distinct
+        atmosphere.
+      </span>
       <button className={Styles.themeButton} onClick={toggleTheme}>
         Switch to {theme === "light" ? "dark" : "light"}
       </button>

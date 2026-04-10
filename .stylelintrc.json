@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "stylelint-config-standard-scss"
+  ],
+  "rules": {
+    "indentation": 2,
+    "string-quotes": "single",
+    "color-hex-length": "long",
+    "rule-empty-line-before": "always",
+    "declaration-block-trailing-semicolon": "always"
+  }
+}

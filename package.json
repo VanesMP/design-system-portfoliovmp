@@ -12,7 +12,12 @@
     "build:tokens": "node ./style-dictionary.config.js",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "build": "npm run build:tokens && npm run build-storybook"
+    "build": "npm run build:tokens && npm run build-storybook",
+    "lint": "eslint src --ext .js,.jsx",
+    "lint:fix": "eslint src --ext .js,.jsx --fix",
+    "lint:css": "stylelint 'src/**/*.{css,scss}'",
+    "lint:css:fix": "stylelint 'src/**/*.{css,scss}' --fix",
+    "format": "prettier --write 'src/**/*.{js,jsx,css,scss}'"
   },
   "repository": {
     "type": "git",
@@ -34,9 +39,18 @@
   "devDependencies": {
     "@storybook/addon-docs": "^10.3.5",
     "@storybook/react-vite": "^10.3.4",
+    "eslint": "^9.39.4",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "prettier": "^3.8.2",
     "prop-types": "^15.8.1",
     "sass": "^1.99.0",
     "storybook": "^10.3.4",
-    "style-dictionary": "^5.4.0"
+    "style-dictionary": "^5.4.0",
+    "stylelint": "^17.6.0",
+    "stylelint-config-standard-scss": "^17.0.0",
+    "stylelint-prettier": "^5.0.3"
   }
 }
