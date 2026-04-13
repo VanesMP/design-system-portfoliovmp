@@ -1,0 +1,1 @@
+export { UpperCaseText } from "./UpperCaseText";

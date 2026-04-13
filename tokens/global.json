@@ -1,12 +1,34 @@
 {
   "font": {
-    "heading": { "value": "Sora", "type": "font" },
-    "text": { "value": "DM_Sans", "type": "font" }
+    "heading": { "value": "Sora", "type": "fontFamilies" },
+    "text": { "value": "DM_Sans", "type": "fontFamilies" },
+    "mono": { "value": "ui-monospace, SFMono-Regular", "type": "fontFamilies" }
+  },
+  "size": {
+    "h1": { "value": "48px", "type": "fontSizes" },
+    "h2": { "value": "30px", "type": "fontSizes" },
+    "text": { "value": "16px", "type": "fontSizes" },
+    "label": { "value": "14px", "type": "fontSizes" },
+    "mono": { "value": "12px", "type": "fontSizes" }
   },
   "borderRadius": {
     "xs": { "value": "4px", "type": "borderRadius" },
     "sm": { "value": "8px", "type": "borderRadius" },
     "md": { "value": "16px", "type": "borderRadius" },
     "lg": { "value": "24px", "type": "borderRadius" }
+  },
+  "space": {
+    "xs": { "value": "4px", "type": "space" },
+    "sm": { "value": "8px", "type": "space" },
+    "md": { "value": "16px", "type": "space" },
+    "lg": { "value": "24px", "type": "space" }
+  },
+  "typography": {
+    "h1": { "value": "{size.h1} {font.heading}", "type": "typography" },
+    "h2": { "value": "{size.h2} {font.heading}", "type": "typography" },
+    "h3": { "value": "{size.text} {font.heading}", "type": "typography" },
+    "text": { "value": "{size.text} {font.text}", "type": "typography" },
+    "label": { "value": "{size.label} {font.text}", "type": "typography" },
+    "mono": { "value": "{size.mono} {font.mono}", "type": "typography" }
   }
 }

@@ -1,7 +1,9 @@
 {
-    "color": 
-    {
-        "background": { "value": "#F6F8F2", "type": "color" },
-        "text": { "value": "#080808", "type": "color" }
-    }
+  "color": {
+    "background": { "value": "#F6F8F2", "type": "color" },
+    "card": { "value": "#ffffffcc", "type": "color" },
+    "text": { "value": "#367d6f", "type": "color" },
+    "mono": { "value": "#118856", "type": "color" },
+    "heading": { "value": "#00241D", "type": "color" }
+  }
 }
