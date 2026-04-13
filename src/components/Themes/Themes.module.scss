@@ -5,10 +5,11 @@
   display: flex;
   flex-direction: column;
   background-color: var(--color-background);
-  color: var(--color-text);
 }
 
 .themeTitle {
+  font: var(--typography-h1);
+  color: var(--color-heading);
   margin-bottom: 0px;
 }
 
@@ -22,6 +23,8 @@
 }
 
 .themeText {
+  font: var(--typography-text);
+  color: var(--color-text);
   margin: 16px 0px;
   display: flex;
   flex-direction: column;
