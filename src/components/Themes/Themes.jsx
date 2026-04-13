@@ -2,19 +2,7 @@ import { useEffect, useState } from "react";
 // import clsx from "clsx";
 import Styles from "./Themes.module.scss";
 import { UpperCaseText } from "../../ui/UpperCaseText/UpperCaseText";
-
-const portfolioContent = {
-  dev: {
-    title: "Dev",
-    description:
-      "A functional and structured aesthetic, optimized for readability and productivity.",
-  },
-  art: {
-    title: "Art",
-    description:
-      "A more expressive and visual identity, designed to highlight creativity and emotion.",
-  },
-};
+import { PORTFOLIO_CONTENT } from "./constants";
 
 export const Themes = ({ portfolio }) => {
   const [theme, setTheme] = useState("light");
@@ -28,7 +16,7 @@ export const Themes = ({ portfolio }) => {
 
   console.log(portfolio);
 
-  const content = portfolioContent[portfolio];
+  const content = PORTFOLIO_CONTENT[portfolio];
 
   return (
     <div className={Styles.themeContainer}>
