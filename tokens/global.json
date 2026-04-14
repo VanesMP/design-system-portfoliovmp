@@ -30,5 +30,8 @@
     "text": { "value": "{size.text} {font.text}", "type": "typography" },
     "label": { "value": "{size.label} {font.text}", "type": "typography" },
     "mono": { "value": "{size.mono} {font.mono}", "type": "typography" }
+  },
+  "border": {
+    "card": { "value": "1px solid var(--color-border)", "type": "border" }
   }
 }

@@ -1,4 +1,3 @@
-import { useContext } from "react";
 import { Themes } from "./Themes";
 
 export default {

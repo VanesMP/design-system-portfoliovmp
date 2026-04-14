@@ -2,8 +2,9 @@
   "color": {
     "background": { "value": "#00241D", "type": "color" },
     "card": { "value": "#052e26cc", "type": "color" },
-    "text": { "value": "#7b9d8f", "type": "color" },
+    "text": { "value": "#9bb0a8", "type": "color" },
     "mono": { "value": "#118856", "type": "color" },
-    "heading": { "value": "#E8EDDE", "type": "color" }
+    "heading": { "value": "#E8EDDE", "type": "color" },
+    "border-card": { "value": "#1d353080", "type": "color" }
   }
 }
