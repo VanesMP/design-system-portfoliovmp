@@ -1,8 +1,14 @@
 {
   "font": {
-    "heading": { "value": "Sora", "type": "fontFamilies" },
-    "text": { "value": "DM_Sans", "type": "fontFamilies" },
-    "mono": { "value": "ui-monospace, SFMono-Regular", "type": "fontFamilies" }
+    "heading": { "value": "Sora, sans-serif", "type": "fontFamilies" },
+    "text": {
+      "value": "\"DM_Sans\", system-ui, sans-serif",
+      "type": "fontFamilies"
+    },
+    "mono": {
+      "value": "ui-monospace, SFMono-Regular, monospace",
+      "type": "fontFamilies"
+    }
   },
   "size": {
     "h1": { "value": "48px", "type": "fontSizes" },
@@ -32,6 +38,35 @@
     "mono": { "value": "{size.mono} {font.mono}", "type": "typography" }
   },
   "border": {
-    "card": { "value": "1px solid var(--color-border)", "type": "border" }
+    "card": {
+      "value": "1px solid var(--color-border-card)",
+      "type": "other"
+    }
+  },
+  "gradient": {
+    "primaryToAccent": {
+      "value": "linear-gradient(135deg, color-mix(in srgb, var(--primary) 20%, transparent), color-mix(in srgb, var(--accent) 20%, transparent))",
+      "type": "other"
+    },
+    "accentToPrimary": {
+      "value": "linear-gradient(135deg, color-mix(in srgb, var(--accent) 20%, transparent), color-mix(in srgb, var(--primary) 20%, transparent))",
+      "type": "other"
+    },
+    "secondaryToAccent": {
+      "value": "linear-gradient(135deg, color-mix(in srgb, var(--secondary) 30%, transparent), color-mix(in srgb, var(--accent) 20%, transparent))",
+      "type": "other"
+    },
+    "accentToSecondary": {
+      "value": "linear-gradient(135deg, color-mix(in srgb, var(--accent) 20%, transparent), color-mix(in srgb, var(--secondary) 30%, transparent))",
+      "type": "other"
+    },
+    "primaryToSecondary": {
+      "value": "linear-gradient(135deg, color-mix(in srgb, var(--primary) 20%, transparent), color-mix(in srgb, var(--secondary) 30%, transparent))",
+      "type": "other"
+    },
+    "secondaryToPrimary": {
+      "value": "linear-gradient(135deg, color-mix(in srgb, var(--secondary) 30%, transparent), color-mix(in srgb, var(--primary) 20%, transparent))",
+      "type": "other"
+    }
   }
 }

@@ -5,6 +5,14 @@
     "text": { "value": "#bb9081", "type": "color" },
     "mono": { "value": "#d57538", "type": "color" },
     "heading": { "value": "#f3dace", "type": "color" },
-    "border": { "value": "#2e1f1f80", "type": "color" }
+    "border-card": { "value": "#2e1f1f80", "type": "color" },
+    "primary": { "value": "#79151e", "type": "color" },
+    "secondary": { "value": "#5a3037", "type": "color" },
+    "accent": { "value": "#f1c17e", "type": "color" },
+    "muted": { "value": "#281515", "type": "color" }
+  },
+  "shadow-card": {
+    "value": "0 4px 24px -4px hsl(0 0% 0% / .4)",
+    "type": "shadow"
   }
 }

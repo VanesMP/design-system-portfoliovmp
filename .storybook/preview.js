@@ -15,5 +15,3 @@ const preview = {
 };
 
 export default preview;
-
-/** @type { import('@storybook/react-vite').Preview } */
