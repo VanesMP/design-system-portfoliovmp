@@ -1,0 +1,53 @@
+.card {
+  padding: var(--space-lg);
+  border-radius: var(--border-radius-sm);
+  width: fit-content;
+  height: 100%;
+  background-color: var(--color-background);
+  border: var(--border-card);
+  transition:
+    transform 0.3s cubic-bezier(0, 0, 0.2, 1),
+    box-shadow 0.3s cubic-bezier(0, 0, 0.2, 1);
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.card:hover .cardTitle {
+  color: var(--color-mono);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--space-sm);
+}
+
+.cardTitle {
+  font: var(--typography-h3);
+  color: var(--color-heading);
+  margin: 0;
+  transition: color 0.2s ease;
+}
+
+.cardSubtitle {
+  font: var(--typography-label);
+  color: var(--color-mono);
+  line-height: 1.6;
+}
+
+.cardDate {
+  font: var(--typography-mono);
+  color: var(--color-text);
+}
+
+.cardDescription {
+  white-space: pre-line;
+  color: var(--color-text);
+  font: var(--typography-label);
+  margin-bottom: var(--space-sm);
+  line-height: 1.5;
+}

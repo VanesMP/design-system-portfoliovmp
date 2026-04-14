@@ -1,5 +1,5 @@
 const config = {
-  stories: ["../src/**/*.stories.@(js|jsx|ts|tsx|mdx)"],
+  stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
   addons: ["@storybook/addon-docs"],
   framework: {
     name: "@storybook/react-vite",

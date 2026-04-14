@@ -1,19 +1,8 @@
-import { useState, useEffect } from "react";
-import clsx from "clsx";
+import { useEffect, useState } from "react";
+// import clsx from "clsx";
 import Styles from "./Themes.module.scss";
-
-const portfolioContent = {
-  dev: {
-    title: "Dev",
-    description:
-      "A functional and structured aesthetic, optimized for readability and productivity.",
-  },
-  art: {
-    title: "Art",
-    description:
-      "A more expressive and visual identity, designed to highlight creativity and emotion.",
-  },
-};
+import { UpperCaseText } from "../../ui/UpperCaseText/UpperCaseText";
+import { PORTFOLIO_CONTENT } from "./constants";
 
 export const Themes = ({ portfolio }) => {
   const [theme, setTheme] = useState("light");
@@ -25,12 +14,15 @@ export const Themes = ({ portfolio }) => {
   const toggleTheme = () =>
     setTheme((prev) => (prev === "light" ? "dark" : "light"));
 
-  const content = portfolioContent[portfolio];
+  console.log(portfolio);
+
+  const content = PORTFOLIO_CONTENT[portfolio];
 
   return (
     <div className={Styles.themeContainer}>
       <h1 className={Styles.themeTitle}>
-        Theme system for {portfolio} portfolio
+        Theme system for <UpperCaseText>{portfolio}</UpperCaseText> portfolio in{" "}
+        <UpperCaseText>{theme}</UpperCaseText>
       </h1>
       <span className={Styles.themeText}>
         Two visual directions are available:

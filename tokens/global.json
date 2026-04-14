@@ -1,12 +1,72 @@
 {
   "font": {
-    "heading": { "value": "Sora", "type": "font" },
-    "text": { "value": "DM_Sans", "type": "font" }
+    "heading": { "value": "Sora, sans-serif", "type": "fontFamilies" },
+    "text": {
+      "value": "\"DM_Sans\", system-ui, sans-serif",
+      "type": "fontFamilies"
+    },
+    "mono": {
+      "value": "ui-monospace, SFMono-Regular, monospace",
+      "type": "fontFamilies"
+    }
+  },
+  "size": {
+    "h1": { "value": "48px", "type": "fontSizes" },
+    "h2": { "value": "30px", "type": "fontSizes" },
+    "text": { "value": "16px", "type": "fontSizes" },
+    "label": { "value": "14px", "type": "fontSizes" },
+    "mono": { "value": "12px", "type": "fontSizes" }
   },
   "borderRadius": {
     "xs": { "value": "4px", "type": "borderRadius" },
     "sm": { "value": "8px", "type": "borderRadius" },
     "md": { "value": "16px", "type": "borderRadius" },
     "lg": { "value": "24px", "type": "borderRadius" }
+  },
+  "space": {
+    "xs": { "value": "4px", "type": "space" },
+    "sm": { "value": "8px", "type": "space" },
+    "md": { "value": "16px", "type": "space" },
+    "lg": { "value": "24px", "type": "space" }
+  },
+  "typography": {
+    "h1": { "value": "{size.h1} {font.heading}", "type": "typography" },
+    "h2": { "value": "{size.h2} {font.heading}", "type": "typography" },
+    "h3": { "value": "{size.text} {font.heading}", "type": "typography" },
+    "text": { "value": "{size.text} {font.text}", "type": "typography" },
+    "label": { "value": "{size.label} {font.text}", "type": "typography" },
+    "mono": { "value": "{size.mono} {font.mono}", "type": "typography" }
+  },
+  "border": {
+    "card": {
+      "value": "1px solid var(--color-border-card)",
+      "type": "other"
+    }
+  },
+  "gradient": {
+    "primaryToAccent": {
+      "value": "linear-gradient(135deg, color-mix(in srgb, var(--primary) 20%, transparent), color-mix(in srgb, var(--accent) 20%, transparent))",
+      "type": "other"
+    },
+    "accentToPrimary": {
+      "value": "linear-gradient(135deg, color-mix(in srgb, var(--accent) 20%, transparent), color-mix(in srgb, var(--primary) 20%, transparent))",
+      "type": "other"
+    },
+    "secondaryToAccent": {
+      "value": "linear-gradient(135deg, color-mix(in srgb, var(--secondary) 30%, transparent), color-mix(in srgb, var(--accent) 20%, transparent))",
+      "type": "other"
+    },
+    "accentToSecondary": {
+      "value": "linear-gradient(135deg, color-mix(in srgb, var(--accent) 20%, transparent), color-mix(in srgb, var(--secondary) 30%, transparent))",
+      "type": "other"
+    },
+    "primaryToSecondary": {
+      "value": "linear-gradient(135deg, color-mix(in srgb, var(--primary) 20%, transparent), color-mix(in srgb, var(--secondary) 30%, transparent))",
+      "type": "other"
+    },
+    "secondaryToPrimary": {
+      "value": "linear-gradient(135deg, color-mix(in srgb, var(--secondary) 30%, transparent), color-mix(in srgb, var(--primary) 20%, transparent))",
+      "type": "other"
+    }
   }
 }
