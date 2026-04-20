@@ -6,3 +6,25 @@
 .sectionContent {
   flex: 1;
 }
+
+.colorPalette {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.colorPalette > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-wrap: nowrap;
+}
+
+.colorPalette > div * {
+  font-size: 12px;
+}
+
+.colorPalette > div > div {
+  width: 100px;
+}
