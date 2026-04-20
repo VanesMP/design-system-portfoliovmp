@@ -1,0 +1,40 @@
+import { ColorPalette, ColorItem } from "@storybook/addon-docs/blocks";
+import "./styles.scss";
+import { ColorPaletteBlock } from "./colorPalette/ColorPaletteBlock.jsx";
+import { palettes } from "./colorPalette/palettes.js";
+
+# Color Palette
+
+The design system is built around two distinct visual identities, each reflecting the personality of its portfolio.
+
+---
+
+## Dev Portfolio
+
+Uses a green-teal palette inspired by terminal interfaces and natural growth — dark forest greens for focus and depth, with bright lime accents that evoke code highlighting and technical precision. The light mode shifts to soft sage tones, keeping the organic feel while maximizing readability.
+
+### Light mode
+
+<ColorPaletteBlock data={palettes.dev.light} />
+
+---
+
+### Dark mode
+
+<ColorPaletteBlock data={palettes.dev.dark} />
+
+---
+
+## Art portfolio
+
+Draws from warm earth tones and deep burgundies — colors associated with ink, canvas, and handcraft. Dark modes lean into rich maroon-blacks evoking a painter's studio at night, while light modes use cream and blush tones reminiscent of aged paper and watercolor washes.
+
+### Light mode
+
+<ColorPaletteBlock data={palettes.art.light} />
+
+---
+
+### Dark mode
+
+<ColorPaletteBlock data={palettes.dev.dark} />
