@@ -14,5 +14,19 @@
   "shadow-card": {
     "value": "0 4px 24px -4px hsl(0 100% 4% / .08)",
     "type": "shadow"
+  },
+  "gradient": {
+    "hero": {
+      "value": "linear-gradient(135deg, hsl(355 70% 24%), hsl(35 80% 55%))",
+      "type": "gradient"
+    },
+    "card": {
+      "value": "linear-gradient(145deg, hsl(0 0% 100%), hsl(25 50% 95%))  ",
+      "type": "gradient"
+    },
+    "glow": {
+      "value": "radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), hsl(355 70% 28% / 0.06), transparent 40%)",
+      "type": "gradient"
+    }
   }
 }
