@@ -1,10 +1,10 @@
 import { Card } from "./Card";
-import { withTheme } from "../__storybook__/ThemesWrapper";
+import { withThemeControls } from "../__storybook__/ThemesWrapper";
 
 export default {
   title: "Components/Card",
   component: Card,
-  decorators: [withTheme],
+  decorators: [withThemeControls],
 };
 
 export const Default = {
